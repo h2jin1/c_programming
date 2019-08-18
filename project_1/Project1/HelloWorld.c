@@ -20,7 +20,7 @@ main() {
 	//day_4();
 	day_5();
 }
-// C ÇÁ·Î±×·¥ ±âº»
+// C í”„ë¡œê·¸ë¨ ê¸°ë³¸
 void day_1() {
 	printf("========== DAY 1 ========== \n");
 	printf(HELLO);
@@ -31,77 +31,77 @@ void day_1() {
 	sprint();
 }
 void sprint() {
-	printf("sprint ÇÔ¼ö¿¡¼­ Ãâ·ÂÇß½À´Ï´Ù. \n");
+	printf("sprint í•¨ìˆ˜ì—ì„œ ì¶œë ¥í–ˆìŠµë‹ˆë‹¤. \n");
 }
-// ÀÔÃâ·Â ÇÔ¼ö
+// ì…ì¶œë ¥ í•¨ìˆ˜
 void day_2() {
 	printf("========== DAY 2 ========== \n");
-	// Ãâ·Â ÇÔ¼ö
+	// ì¶œë ¥ í•¨ìˆ˜
 	char ch1 = 'y', ch2 = 'e', ch3 = 's';
 	printf("putchar = ");
 	putchar(ch1);
 	putchar(ch2);
 	putchar(ch3);
 	
-	putchar('\n'); // ÇÑ ÁÙ ¿£ÅÍ
+	putchar('\n'); // í•œ ì¤„ ì—”í„°
 	puts("satndard input output!");
 	
-	printf("ÇÑ ÁÙ ±ÛÀÚ ÀÔ·Â ÈÄ ÁÙ ¹Ù²Ù±â\n");
-	printf("¿ª½½·¡½Ã ÀÚÃ¼¸¦ Ãâ·ÂÇÏ±â \\ \n");
-	printf("ÀÌÁß ÀÎ¿ë ºÎÈ£¸¦ Ãâ·ÂÇÏ±â \" \n");
-	puts("\n"); // µÎ ÁÙ ¿£ÅÍ
+	printf("í•œ ì¤„ ê¸€ì ì…ë ¥ í›„ ì¤„ ë°”ê¾¸ê¸°\n");
+	printf("ì—­ìŠ¬ë˜ì‹œ ìì²´ë¥¼ ì¶œë ¥í•˜ê¸° \\ \n");
+	printf("ì´ì¤‘ ì¸ìš© ë¶€í˜¸ë¥¼ ì¶œë ¥í•˜ê¸° \" \n");
+	puts("\n"); // ë‘ ì¤„ ì—”í„°
 	
-	// ÀÔ·Â ÇÔ¼ö
+	// ì…ë ¥ í•¨ìˆ˜
 	char gender, married;
 	int salary;
 
-	printf("¼ºº° ? (¿©¼º:w, ³²¼º:m) ");
+	printf("ì„±ë³„ ? (ì—¬ì„±:w, ë‚¨ì„±:m) ");
 	gender = getchar();
-	// ÀÔ·Â ¹öÆÛ¿¡ ³²°ÜÁø ¸ğµç ³»¿ëÀ» Áö¿î´Ù. - getchar()¸¦ ¾µ ¶§ ÁÖÀÇÇØ¾ß ÇÔ.
+	// ì…ë ¥ ë²„í¼ì— ë‚¨ê²¨ì§„ ëª¨ë“  ë‚´ìš©ì„ ì§€ìš´ë‹¤. - getchar()ë¥¼ ì“¸ ë•Œ ì£¼ì˜í•´ì•¼ í•¨.
 	buffer_clear();
 
-	printf("°áÈ¥ ? (±âÈ¥:y, ¹ÌÈ¥:n) ");
+	printf("ê²°í˜¼ ? (ê¸°í˜¼:y, ë¯¸í˜¼:n) ");
 	married = getchar();
 	
-	printf("¿ù±Ş ? ");
+	printf("ì›”ê¸‰ ? ");
 	scanf("%d", &salary);
 
-	printf("  ¼ºº°: %c\n  °áÈ¥: %c\n  ¿ù±Ş : %d", gender, married, salary);
+	printf("  ì„±ë³„: %c\n  ê²°í˜¼: %c\n  ì›”ê¸‰ : %d", gender, married, salary);
 }
 void buffer_clear() {
 	while (getchar() != '\n');
 }
-// ¿¬»êÀÚ
+// ì—°ì‚°ì
 int day_3() {
 	int x = 20, y = 3;
-	printf("ÇöÀçÀÇ °ª: x=%d, y=%d \n", x, y);
-	printf("³ª´©±â ¿¬»ê: %d \n", x / y);
-	printf("mod ¿¬»ê: %d \n", (x%y)); // ³ª¸ÓÁö °ª
+	printf("í˜„ì¬ì˜ ê°’: x=%d, y=%d \n", x, y);
+	printf("ë‚˜ëˆ„ê¸° ì—°ì‚°: %d \n", x / y);
+	printf("mod ì—°ì‚°: %d \n", (x%y)); // ë‚˜ë¨¸ì§€ ê°’
 
-	// »ê¼ú ¿¬»êÀÚ
+	// ì‚°ìˆ  ì—°ì‚°ì
 	int num1, num2, sum;
 	num1 = 10; num2 = 20;
 	sum = num1 + num2;
-	printf("\n»ê¼ú ¿¬»êÀÚ\n");
+	printf("\nì‚°ìˆ  ì—°ì‚°ì\n");
 	printf("num1 = %d, num2 = %d \n", num1, num2);
 	printf("num1 + num2 = %d \n", sum);
 	printf("num1 += num2 = %d \n", num1 += num2);
 
-	// Áõ°¨ ¿¬»êÀÚ
-	printf("\nÁõ°¨ ¿¬»êÀÚ\n");
+	// ì¦ê° ì—°ì‚°ì
+	printf("\nì¦ê° ì—°ì‚°ì\n");
 	printf("num1 = %d \n", num1);
 	printf("++num1 = %d \n", ++num1);
 	printf("num+1 = %d \n", num1);
 	printf("num1++ = %d \n", num1++);
 	printf("num+1 = %d \n", num1);
 
-	// ¿ì¼±¼øÀ§
-	printf("\n¿ì¼±¼øÀ§\n");
+	// ìš°ì„ ìˆœìœ„
+	printf("\nìš°ì„ ìˆœìœ„\n");
 	printf("num1 = %d, num2 = %d \n", num1, num2);
-	printf("num = %d, num2 = %d, ¼øÀ§ ¿¬»ê = %d \n", num1, num2, (++num1 + num2++)); // °ıÈ£°¡ ¿ì¼± Ã³¸® µÊ
+	printf("num = %d, num2 = %d, ìˆœìœ„ ì—°ì‚° = %d \n", num1, num2, (++num1 + num2++)); // ê´„í˜¸ê°€ ìš°ì„  ì²˜ë¦¬ ë¨
 
-	// ºñÆ® ¿¬»ê
-	printf("\nºñÆ® ¿¬»ê\n");
+	// ë¹„íŠ¸ ì—°ì‚°
+	printf("\në¹„íŠ¸ ì—°ì‚°\n");
 	num1 = 5, num2 = 6;
 
 	// num1 = 0000 0101 (5)
@@ -109,36 +109,36 @@ int day_3() {
 	// num1 & num2 = 0000 0100(4)
 	printf("num1 & num2 = %d \n", num1 & num2);
 
-	// 3Ç× ¿¬»ê
-	printf("\n3Ç× ¿¬»ê\n");
+	// 3í•­ ì—°ì‚°
+	printf("\n3í•­ ì—°ì‚°\n");
 	printf("num1 = %d \n", num1);
-	printf("num1ÀÇ °ªÀÌ 10º¸´Ù ÀûÀº°¡ ? : %c \n", num1 < 10 ? 'Y' : 'N');
+	printf("num1ì˜ ê°’ì´ 10ë³´ë‹¤ ì ì€ê°€ ? : %c \n", num1 < 10 ? 'Y' : 'N');
 
 	return 0;
 }
-// Áø¹ı
+// ì§„ë²•
 void day_4() {
-	int HexNum = 0x11; // 16Áø¼ö
-	int OctNum = 021; // 8Áø¼ö
-	printf("16Áø¼ö [%x] = 10Áø¼ö [%d] \n\n", HexNum, HexNum);
-	printf("8Áø¼ö [%o] = 10Áø¼ö [%d] \n\n", OctNum, OctNum);
+	int HexNum = 0x11; // 16ì§„ìˆ˜
+	int OctNum = 021; // 8ì§„ìˆ˜
+	printf("16ì§„ìˆ˜ [%x] = 10ì§„ìˆ˜ [%d] \n\n", HexNum, HexNum);
+	printf("8ì§„ìˆ˜ [%o] = 10ì§„ìˆ˜ [%d] \n\n", OctNum, OctNum);
 }
-// »ó¼ö, ±âº» ÀÚ·áÇü
+// ìƒìˆ˜, ê¸°ë³¸ ìë£Œí˜•
 void day_5() {
 	const double PI = 3.141592;
 	printf("PI = %f \n", PI);
 	printf("ODD = %d \n", ODD);
 	printf("EVEN = %d \n", EVEN);
 }
-// º¯¼ö ÃÊ±âÈ­, µ¥ÀÌÅÍÀÇ Ç¥Çö(Á¤¼ö, ½Ç¼ö)
+// ë³€ìˆ˜ ì´ˆê¸°í™”, ë°ì´í„°ì˜ í‘œí˜„(ì •ìˆ˜, ì‹¤ìˆ˜)
 void day_6() {
 
 }
-// ÀÚ·áÇü º¯È¯, typedef¹® eunm »ó¼ö
+// ìë£Œí˜• ë³€í™˜, typedefë¬¸ eunm ìƒìˆ˜
 void day_7() {
 
 }
-// µğ¹ö±×¸¦ È°¿ëÇÑ ÇÁ·Î±×·¡¹Ö ½Ç½À
+// ë””ë²„ê·¸ë¥¼ í™œìš©í•œ í”„ë¡œê·¸ë˜ë° ì‹¤ìŠµ
 void day_8() {
 
 }
