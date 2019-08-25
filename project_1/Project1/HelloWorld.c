@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #define HELLO "Start C Programing! HelloWorld!"
 #define PRODUCT(X, Y) ((X)*(Y))
 #pragma warning(disable:4996)
@@ -12,13 +12,51 @@ void day_2();
 int day_3();
 void day_4();
 void day_5();
+void day_6();
+void day_7();
+void day_8();
+void day_9();
+void day_10();
+void day_11();
+void day_12();
+void day_13();
+void day_14();
+void day_15();
+void day_16();
+void day_17();
+void day_18();
+void day_19();
+void day_20();
+void day_21();
+void day_22();
+void day_23();
+void day_24();
 
 main() {
 	//day_1();
 	//day_2();
 	//day_3();
 	//day_4();
-	day_5();
+	//day_5();
+	//day_6();
+	day_7();
+	//day_8();
+	//day_9();
+	//day_10();
+	//day_11();
+	//day_12();
+	//day_13();
+	//day_14();
+	//day_15();
+	//day_16();
+	//day_17();
+	//day_18();
+	//day_19();
+	//day_20();
+	//day_21();
+	//day_22();
+	//day_23();
+	//day_24();
 }
 // C 프로그램 기본
 void day_1() {
@@ -131,14 +169,109 @@ void day_5() {
 	printf("EVEN = %d \n", EVEN);
 }
 // 변수 초기화, 데이터의 표현(정수, 실수)
-void day_6() {
-
-}
 // 자료형 변환, typedef문 eunm 상수
-void day_7() {
+void day_6() {
+	// 묵시적 형변환
+	char ch = 1;
+	double d_num = 3.1;
+	printf("묵시적 형변환");
+	printf("%1f \n", ch + d_num);
 
+	// 명시적 형변환
+	int i_num = 20;
+	printf("묵시적 형변환");
+	printf("%d \n", i_num / (int) d_num);
+
+	// ENUM
+	enum Color { red, green, blue, white, black } my_color;
+	my_color = white;
+	printf("my color is %d \n", my_color);
 }
 // 디버그를 활용한 프로그래밍 실습
+void day_7() {
+	// ctrl + F5			: 디버그 없이 실행
+	// F5					: 디버그 모드로 실행
+	// F9					: 중단점 설정/해제
+	// F10					: 프로시저 단위 실행
+	// F11					: 라인 단위 실행
+	// shift + F5			: 실행중인 디버그 중지
+	// ctrl + shift + F5	: 디버그 재시작
+	// ctrl + F10			: 현재 커서 까지 디버깅 실행
+	
+	int a = 0;
+	int b = 0;
+	int sum = a + b;
+
+	++a; ++b;
+	printf("sum = %d \n", sum);
+	a++; b++;
+	printf("a = %d \n", a);
+}
+// 조건문과 분기
 void day_8() {
+
+}
+// switch 조건문
+void day_9() {
+
+}
+// while 과 do~while문
+void day_10() {
+
+}
+// for 반복문
+void day_11() {
+
+}
+// 함수의 정의와 선언
+void day_12() {
+
+}
+// 변수의 존재기간과 접근범위
+void day_13() {
+
+}
+// 배열
+void day_14() {
+
+}
+// 포인터
+void day_15() {
+
+}
+// 포인터와 배열
+void day_16() {
+
+}
+// 함수인자로 배열 전달
+void day_17() {
+
+}
+// 포인터의 포인터
+void day_18() {
+
+}
+// 문자열 처리 함수
+void day_19() {
+
+}
+// 문자열 배열
+void day_20() {
+
+}
+// 구조체
+void day_21() {
+
+}
+// 구조체와 배열 그리고 포인터
+void day_22() {
+
+}
+// C언어 메모리의 구조
+void day_23() {
+
+}
+// 동적 메모리 할당
+void day_24() {
 
 }
